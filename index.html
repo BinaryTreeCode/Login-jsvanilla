@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h3>welcome</h3>
+        <input
+          type="file"
+          accept="image/*"
+          name="image"
+          id="file"
+          autofocus
+          onchange="loadFile(event)"
+          style="display: none"
+        />
+        <label for="file" style="cursor: pointer">
+          <img
+            src="./image-upload_.png"
+            alt="Upload profile image"
+            id="IMAGE"
+          />
+        </label>
+        <p id="NAME">user</p>
+      </header>
+      <form>
+        <div class="username">
+          <input id="INPUT_NAME" type="text" placeholder="Username" />
+          <label for="INPUT_NAME" id="ERROR_NAME" class="error"> nombré incorrecta</label>
+        </div>
+        <div class="password">
+          <input id="INPUT_PASWORD" type="password" placeholder="Password" />
+          <label for="INPUT_PASWORD" id="ERROR_PASWORD" class="error">contraseña incorrecta</label>
+        </div>
+        <button id="boton" type="button" onclick="validated()">Sign up</button>
+      </form>
+    </main>
+  </body>
+  <p id="demo"></p>
+
+  <script></script>
+  <script src="./login.js"></script>
+</html>
